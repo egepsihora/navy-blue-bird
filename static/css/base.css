@@ -1,0 +1,9 @@
+.logo {
+    width: 262.5px;
+    height: 262.5px;
+    align: center;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+}
