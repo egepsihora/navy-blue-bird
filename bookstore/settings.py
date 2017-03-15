@@ -70,8 +70,12 @@ WSGI_APPLICATION = 'bookstore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'nbbbase',
+        'USER': 'superuser',
+        'PASSWORD': 'nbbird',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -94,6 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'users.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
